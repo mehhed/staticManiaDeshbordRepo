@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "avnirNext-regular";
+  src: url("../fonts/AvenirNext/AvenirNextLTPro-Regular.otf") format("woff2");
+}
+@font-face {
+  font-family: "avnirNext-italic";
+  src: url("../fonts/AvenirNext/AvenirNextLTPro-Regular.otf") format("woff2");
+}
+@font-face {
+  font-family: "avnirNext-bold";
+  src: url("../fonts/AvenirNext/AvenirNextLTPro-Regular.otf") format("woff2");
+}
+
+.avniarNext-regular {
+  font-family: "avnirNext-regular", sans-serif;
+}
+.avniarNext-italic {
+  font-family: "avnirNext-regular", sans-serif;
+}
+.avniarNext-bold {
+  font-family: "avnirNext-regular", sans-serif;
+}

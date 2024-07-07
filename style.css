@@ -16,3 +16,8 @@ progress::-moz-progress-bar {
   background-color: #31ba96;
   border-radius: 5px;
 }
+
+/* Poppins font */
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+}
