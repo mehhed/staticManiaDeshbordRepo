@@ -10,25 +10,33 @@
 
     <!-- tailein css link  -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawosome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+
     <!-- external css file link  -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
-
     <main
       id="container"
       class="p-4 bg-black min-h-[100vh] grid grid-cols-6 gap-5">
       <!-- side bar  -->
       <div class="px-10 py-5 h-[100%]">
         <div>
-          <img
-            class="h-[76px] w-[76px] rounded-xl object-cover"
-            src="./img/de65de332ec15bf450eda8bbd5c75b19.png"
-            alt="" />
+          <div class="h-[76px] w-[76px] relative">
+            <img
+              class="w-full h-full rounded-xl object-cover"
+              src="./img/de65de332ec15bf450eda8bbd5c75b19.png"
+              alt="" />
+            <span
+              class="absolute -top-[15px] -right-[15px] h-[30px] w-[30px] rounded-full bg-[#dc3434] flex justify-center items-center">
+              <span class="text-white font-bold">4</span>
+            </span>
+          </div>
           <h2 class="text-[30px] text-[#ffffff] mt-3">Samantha</h2>
           <p class="text-[17px] text-[#9f9f9f]">samantha@email.com</p>
         </div>
@@ -65,7 +73,180 @@
       <div
         id="mainPageContainer"
         class="col-span-5 bg-white rounded-[1.5rem] grid grid-cols-6 h-[100%]">
-        <div class="col-span-4 h-[100%] p-5">bla bla bal</div>
+        <!-- main content -->
+        <div class="col-span-4 h-[100%] p-[40px]">
+          <!-- headign -->
+          <div class="mb-[50px]">
+            <div class="flex justify-between items-start">
+              <span>
+                <h1 class="text-[40px] font-[600] text-[#262a41]">Expenses</h1>
+                <span class="text-[16px] font-[40] text-[#878787]"
+                  >01 - 25 March, 2020</span
+                >
+              </span>
+              <span class="flex justify-content-end gap-2 items-center mt-5">
+                <div class="flex justify-content-end">
+                  <img
+                    class="w-[30px] h-[30px] border-2 rounded-full object-cover -mr-[10px] z-[3]"
+                    src="./img/user1.png"
+                    alt="" />
+                  <img
+                    class="w-[30px] h-[30px] border-2 rounded-full object-cover -mr-[10px] z-[2]"
+                    src="./img/user2.png"
+                    alt="" />
+                  <img
+                    class="w-[30px] h-[30px] border-2 rounded-full object-cover z-[1]"
+                    src="./img/user3.png"
+                    alt="" />
+                </div>
+                <div>
+                  <i
+                    class="fa-light text-[25px] fa-circle-plus text-[#9fa3a8]"></i>
+                </div>
+              </span>
+            </div>
+            <!-- chart -->
+            <div class="flex gap-3 justify-between items-end my-5">
+              <div class="w-[16px] h-[35px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[52px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[44px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[27px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[35px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[30px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[44px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[27px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[35px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[52px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[44px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[27px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[35px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[30px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[44px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[27px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[35px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[52px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[44px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[27px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[35px] bg-[#d0e4ff]"></div>
+              <div class="w-[16px] h-[60px] bg-[#157aff]"></div>
+              <div class="w-[16px] h-[44px] bg-[#d0e4ff]"></div>
+            </div>
+          </div>
+          <!--  -->
+          <div>
+            <p class="flex justify-between items-center">
+              <span class="text-[18px] font-[500]">Today</span>
+              <i class="fa-solid fa-ellipsis text-[#9fa3a8] text-[30px]"></i>
+            </p>
+            <hr class="my-3" />
+            <div class="space-y-[10px]">
+              <!-- list one  -->
+              <div
+                class="text-[13px] font-[500] flex justify-between items-start gap-5">
+                <span
+                  class="h-[48px] w-[48px] rounded-full bg-[#32a7e2] flex justify-center items-center">
+                  <i class="fa-solid fa-cart-shopping text-white"></i>
+                </span>
+                <span class="grow">
+                  <h4 class="text-[16px] font-[500] text-[#262a41]">Grocery</h4>
+                  <p class="text-[#9fa3a8] text-[14px]">
+                    5:12 pm • Belanja di pasar
+                  </p>
+                </span>
+                <span class="text-[16px] font-[600] text-[#262a41]"
+                  >-872.400</span
+                >
+              </div>
+              <!-- list two  -->
+              <div
+                class="text-[13px] font-[500] flex justify-between items-start gap-5">
+                <span
+                  class="h-[48px] w-[48px] rounded-full bg-[#b548c6] flex justify-center items-center">
+                  <i class="fa-solid fa-bus text-white"></i>
+                </span>
+                <span class="grow">
+                  <h4 class="text-[16px] font-[500] text-[#262a41]">
+                    Transportation
+                  </h4>
+                  <p class="text-[#9fa3a8] text-[14px]">
+                    5:12 pm • Naik bus umum
+                  </p>
+                </span>
+                <span class="text-[16px] font-[600] text-[#262a41]"
+                  >-15.000</span
+                >
+              </div>
+              <!-- list three  -->
+              <div
+                class="text-[13px] font-[500] flex justify-between items-start gap-5">
+                <span
+                  class="h-[48px] w-[48px] rounded-full bg-[#ff8700] flex justify-center items-center">
+                  <i class="fa-solid fa-house text-white"></i>
+                </span>
+                <span class="grow">
+                  <h4 class="text-[16px] font-[500] text-[#262a41]">Housing</h4>
+                  <p class="text-[#9fa3a8] text-[14px]">
+                    5:12 pm • Bayar Listrik
+                  </p>
+                </span>
+                <span class="text-[16px] font-[600] text-[#262a41]"
+                  >-185.750</span
+                >
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="mt-[50px]">
+            <p class="flex justify-between items-center">
+              <span class="text-[18px] font-[500]">Monday, 23 March 2020</span>
+              <i class="fa-solid fa-ellipsis text-[#9fa3a8] text-[30px]"></i>
+            </p>
+            <hr class="my-3" />
+            <div class="space-y-[10px]">
+              <!-- list one  -->
+              <div
+                class="text-[13px] font-[500] flex justify-between items-start gap-5">
+                <span
+                  class="h-[48px] w-[48px] rounded-full bg-[#dc3434] flex justify-center items-center">
+                  <i class="fa-solid fa-cart-shopping text-white"></i>
+                </span>
+                <span class="grow">
+                  <h4 class="text-[16px] font-[500] text-[#262a41]">
+                    Food and Drink
+                  </h4>
+                  <p class="text-[#9fa3a8] text-[14px]">
+                    5:12 pm • Makan Steak
+                  </p>
+                </span>
+                <span class="text-[16px] font-[600] text-[#262a41]"
+                  >-156.000</span
+                >
+              </div>
+              <!-- list two  -->
+              <div
+                class="text-[13px] font-[500] flex justify-between items-start gap-5">
+                <span
+                  class="h-[48px] w-[48px] rounded-full bg-[#4ba83d] flex justify-center items-center">
+                  <i
+                    class="fa-regular fa-circle-play text-white text-[20px]"></i>
+                </span>
+                <span class="grow">
+                  <h4 class="text-[16px] font-[500] text-[#262a41]">
+                    Entertainment
+                  </h4>
+                  <p class="text-[#9fa3a8] text-[14px]">
+                    5:12 pm • Nonton Bioskop
+                  </p>
+                </span>
+                <span class="text-[16px] font-[600] text-[#262a41]"
+                  >-35.200</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- aside bar  -->
         <div
           class="col-span-2 h-[100%] bg-[#f9fafc] p-[40px] rounded-e-[1.5rem]">
           <h3 class="text-[20px] font-semibold">Where your money go?</h3>
@@ -151,10 +332,6 @@
         </div>
       </div>
     </main>
-
-    <footer>
-      <!-- place footer here -->
-    </footer>
 
     <!-- externer javaScrit file link  -->
     <script src="script.js"></script>
